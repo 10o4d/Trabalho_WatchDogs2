@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/icon.png" />
+
+  <title>Watch Dogs 2</title>
+
+  
+
+  <link rel="stylesheet" href="./persona/styles/global.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background">
+    <div id="images">
+      <img src="./persona/assets/members/marcus.png" />
+      <img src="./persona/assets/members/sitara.png" loading="lazy" />
+      <img src="./persona/assets/members/wrench.png" loading="lazy" />
+      <img src="./persona/assets/members/josh.png" loading="lazy" />
+      <img src="./persona/assets/members/T-bone.png" loading="lazy" />
+      <img src="./persona/assets/members/horatio.png" loading="lazy" />
+    </div>
+  </div>
+
+  <div class="app">
+    <header>
+      <a href="index.html" class="navegaçao_link">Home</a>
+
+      <button type="button" id="menu" onclick="changeMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="navigation">
+        <strong>Personagens</strong>
+
+        <div>
+          <button type="button" onclick="setMember(0)">
+            <img src="./persona/assets/members/marcus_card.jpg" />
+          </button>
+          <button type="button" onclick="setMember(1)">
+            <img src="./persona/assets/members/sitara_card.jpg" />
+          </button>
+          <button type="button" onclick="setMember(2)">
+            <img src="./persona/assets/members/wrench_card.jpg" />
+          </button>
+          <button type="button" onclick="setMember(3)">
+            <img src="./persona/assets/members/josh_card.jpg" />
+          </button>
+          <button type="button" onclick="setMember(4)">
+            <img src="./persona/assets/members/T-bone_card.jpg" />
+          </button>
+          <button type="button" onclick="setMember(5)">
+            <img src="./persona/assets/members/Horatio_card.jpg" />
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1 id="member__name" class="marcus" data-value="Marcus Holloway">Marcus Holloway</h1>
+
+      <div>
+        <button type="button" onclick="navigationMember(-1)" id="button__prev" disabled>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6l6 6l1.41-1.41z"/></svg>
+        </button>
+        <button type="button" onclick="navigationMember(1)"  id="button__next">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9.4 18L8 16.6l4.6-4.6L8 7.4L9.4 6l6 6l-6 6Z"/></svg>
+        </button>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="./persona/script/index.js"></script>
+  <script src="./persona/script/changeName.js"></script>
+</body>
+</html>

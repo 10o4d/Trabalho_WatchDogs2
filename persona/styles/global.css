@@ -1,0 +1,53 @@
+@import url('./background.css');
+@import url('./header.css');
+@import url('./main.css');
+@import url('./font.css');
+@import url('./navigation.css');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --text: #EDF1F7;
+
+  --image-shadow: radial-gradient(100% 100% at 50% 1.43%, rgba(22, 21, 21, 0), rgba(22, 21, 21, 0.9) 80%);
+  --marcus: linear-gradient(45deg, #210a93 25%, #040404 80%);
+  --sitara: linear-gradient(45deg, #ff0095 30%, #9900ff 85%);
+  --wrench: linear-gradient(45deg, #000000 10%, #ffffff 70%);
+  --josh: linear-gradient(45deg, #1AEC38, #0040ff 90%);
+  --T-bone: linear-gradient(45deg, #fee800, #00e5ff);
+  --horatio: linear-gradient(45deg, #00ff4c 22%, #ffffff);
+}
+
+body {
+  overflow: hidden;
+  color: var(--text);
+  font-family: 'Rubik', sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 100vh;
+
+  padding: 48px 80px 80px;
+}
+
+@media(max-width: 1024px) {
+  .app {
+    padding: 40px;
+  }
+}
+
+@media(max-width: 600px) {
+  .app {
+    padding: 24px 0 40px;
+  }
+}
