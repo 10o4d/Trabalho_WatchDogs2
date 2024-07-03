@@ -1,0 +1,46 @@
+main{
+ flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+}
+.info{
+    width: 100%;
+    max-width: 570px;
+
+}
+.info p{
+    font-size: 18px;
+    margin: 20px 0 28px ;
+    color: white;
+}
+.info div{
+    display: flex;
+    column-gap: 32px;
+}
+.info div a , .info div button{
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 3px;
+
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+
+    transform: skew(-10deg);
+}
+.info div a {
+    background:var(--black);
+    text-decoration: none;
+    color: white;
+}
+.info div button {
+  
+   border: 1px solid var(--black);
+   color: rgb(0, 0, 0);
+}
